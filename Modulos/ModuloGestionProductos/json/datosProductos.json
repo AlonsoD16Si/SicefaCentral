@@ -1,0 +1,47 @@
+[
+  {
+    "nombreProducto": "Ibuprofeno",
+    "nombreGenerico": "Ibuprofeno genérico",
+    "precio": 9.99,
+    "unidadMedida": "mg",
+    "presentacion": "Tabletas",
+    "principalIndicacion": "Alivio del dolor",
+    "contraindicaciones": "No tomar en caso de alergia al ibuprofeno",
+    "concentracion": "200 mg",
+    "unidadesEnvase": 20,
+    "foto": "karet.jpg",
+    "rutaFoto": "/img/productos/",
+    "codigoBarras": "1234567890",
+    "estatus": "Disponible"
+  },
+  {
+    "nombreProducto": "Paracetamol",
+    "nombreGenerico": "Paracetamol genérico",
+    "precio": 7.5,
+    "unidadMedida": "mg",
+    "presentacion": "Tabletas",
+    "principalIndicacion": "Alivio del dolor y fiebre",
+    "contraindicaciones": "No tomar en caso de alergia al paracetamol",
+    "concentracion": "500 mg",
+    "unidadesEnvase": 30,
+    "foto": "paracetamol.jpg",
+    "rutaFoto": "/img/productos/",
+    "codigoBarras": "9876543210",
+    "estatus": "Disponible"
+  },
+  {
+    "nombreProducto": "Omeprazol",
+    "nombreGenerico": "Omeprazol genérico",
+    "precio": 12.75,
+    "unidadMedida": "mg",
+    "presentacion": "Cápsulas",
+    "principalIndicacion": "Alivio de la acidez estomacal",
+    "contraindicaciones": "No tomar en caso de alergia al omeprazol",
+    "concentracion": "20 mg",
+    "unidadesEnvase": 15,
+    "foto": "omeprazol.jpg",
+    "rutaFoto": "/img/productos/",
+    "codigoBarras": "1357908642",
+    "estatus": "Disponible"
+  }
+]

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatus Pedidos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container-fluid">
+                <div class="row g-0">
+                    <div class="col-sm-12 col-md-3 text-center">
+                        <h2>Estatus|Pedidos</h2>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="barra">
+        <nav class="navbar navbar-expand-lg text-center" >
+            <div class=" container-fluid">
+            <img src="IMG/Logo.png" class="imgMTV">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <div class="dropdown MBI">
+                            <button class="btn  btn-outline-primary dropdown-toggle sep Mboton bgestion" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gestión
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="../ModuloGestionSucursal/GSucursales.html">Sucursales</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../ModuloGestionProductos/Gproductos.html">Productos</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown MBI">
+                            <button class="btn  btn-outline-primary dropdown-toggle sep Mboton bgestion" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Control Sucursales
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Estatus_Pedidos.html">Estatus Pedidos</a></li>
+                                <li><a class="dropdown-item" href="Mostrar_Reportes.html">Mostrar reportes</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ADMINISTRADOR
+                                </button>
+                                <ul class="dropdown-menu">
+                                    
+                                    <li><a class="dropdown-item" href="../../index.html">CERRAR SESION</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+<!-- BARRA PARA ORDENAR LOS ESTATUS Y LA TABLA QUE MOSTRARA LOS PEDIDOS -->
+    <div class="container-xxl primera-tabla">
+        <div class="row ">
+            <div class="col-8 mx-auto">
+                <table id="miTabla" class="table table-bordered">
+                    <thead>
+                        <tr">
+                            <th class=" estilo1col">ESTATUS</th>
+                            <th class=" estilo1col">SUCURSAL</th>
+                            <th class=" estilo1col">ID PEDIDO</th>
+                            <th class=" estilo1col">ACEPTARLA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- AQUI VAN LOS DATOS JSON -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2023 Tetrabytes. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>

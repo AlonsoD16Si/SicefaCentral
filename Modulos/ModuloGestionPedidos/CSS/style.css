@@ -1,0 +1,196 @@
+body {
+  background: rgb(53,163,189);
+  background: linear-gradient(90deg, rgba(53,163,189,1) 0%, rgba(172,249,255,1) 50%, rgba(53,163,189,1) 100%);
+}
+
+.color_home {
+    background-color: #AFD9E5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.barra {
+    margin: 10px;
+    outline: 2px solid black;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .white {
+    color: white;
+  }
+  
+  .imguser {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .MBD {
+    margin-left: 115px;
+  }
+  
+  .MBI {
+    margin-left: 70px;
+  }
+  
+  .imgMTV {
+    height: 100px;
+    width: 310px;
+  }
+  
+  .li {
+    height: 120px;
+    display: flex;
+    width: 197px;
+  }
+  
+  .bgestion {
+    display: flex;
+    width: 197px;
+  }
+  
+  
+  .lia {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+  }
+  
+  
+  .lia:hover {
+    background-color: #7b7b7b;
+    color: white;
+  }
+  
+  .containerf {
+    max-width: 1450px;
+    background: #f3f3f3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  td {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 380px;
+  }
+  
+  
+.lista_desplegable:hover .menu_desple_cont_sucur {
+    display: block;
+}
+
+.menu_desple_cont_sucur::after {
+    content: "";
+    display:block;
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+/*PARA CUANDO EL CURSOR ESTE POR ENCIMA DE ALGUAN OPCION ESTE CAMBIE A OTRO COLOR*/
+.menu_desple_cont_sucur li:hover{
+    background-color: #777777;
+    border-radius: 12px;
+}
+
+.menu_desple_cont_sucur li:not(:last-child){
+    border-bottom: 3px solid #949191;
+    margin: 2px;
+    padding: 2px;
+}
+
+
+/*HOJA DE ESTATUS PEDIDOS*/
+
+/*ESTILO A LA TABLA*/
+#miTabla {
+    margin-top: 100px;
+    border: 4px solid black;
+    text-align: center;
+}
+/*ESTILO A LOS TITULOS DE LA TABLA*/
+#miTabla .estilo1col {
+    background-color: black;
+    color:white
+}
+/*ESTILO A LAS DEMAS CELDAS*/
+#miTabla tbody td {
+    color: black;
+    background-color: #859F9F;
+    font-weight: 600;
+}
+
+/*COLOR A LOS BOTONES*/
+.btn-primario {
+    background-color: #82BD7F;
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.btn-primario:hover {  /*PARA QUE CUANDO SE PASE EL MOUSE POR ENCIMA DE LOS BOTONES ESTOS NO SE LES QUITE EL COLOR DE FONDO */
+    background-color: #3b7039;
+}
+
+/* TABLA REPORTES */
+
+h2 {
+    text-align: center;
+    margin: 60px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#miTabla2 {
+    margin-top: 60px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.table .REPORTES_TABLA {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.container .table tbody td {
+    background-color: #859F9F;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ background-color: #048eeb;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+  h2 {
+      margin: 20px; 
+  }
+  .primera-tabla {
+    margin-top: 30px; 
+}
+}
+

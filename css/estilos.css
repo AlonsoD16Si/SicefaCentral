@@ -1,0 +1,180 @@
+body {
+    background-image: url("../img/ADN.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+
+
+
+h6{
+    text-decoration: line-through;
+}
+
+.container {
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e8f8fb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slide {
+    display: none;
+    padding: 10px;
+}
+
+.slide-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.slide.active {
+    display: block;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-sesion {
+    width: 200px;
+    background: #dcfeff;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* barra de navegacion */
+.barra {
+    margin: 10px;
+    outline: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.white {
+    color: white;
+}
+
+.imguser {
+    height: 80px;
+    width: 80px;
+}
+
+.MBD {
+    margin-left: 115px;
+}
+
+.MBI {
+    margin-left: 70px;
+}
+
+.imgMTV {
+    height: 100px;
+    width: 310px;
+}
+
+.li {
+    height: 120px;
+    display: flex;
+    width: 197px;
+}
+
+.bgestion {
+    display: flex;
+    width: 197px;
+}
+
+
+.lia {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+}
+
+
+.lia:hover {
+    background-color: #7b7b7b;
+    color: white;
+}
+
+.containerf {
+    max-width: 1450px;
+    background: #f3f3f3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+td {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 380px;
+}
+
+.container1 {
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e8f8fb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional para que el contenedor tome toda la altura de la ventana */
+}
+
+
+/*.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ background-color: #048eeb;
+  padding: 10px 0;
+  text-align: center;
+}
+/* Mantén los estilos existentes */
+
+/* Media Queries para tamaños de pantalla diferentes */
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    .container {
+        max-width: 100%;
+    }
+    .imgMTV {
+        width: 100%; /* Asegura que la imagen del logo se ajuste al ancho */
+    }
+    .slide-content {
+        font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+    .container.my-4 {
+        padding: 10px;
+    }
+}

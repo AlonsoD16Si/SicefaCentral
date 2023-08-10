@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gestión de productos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container-fluid">
+                <div class="row g-0">
+                    <div class="col-sm-12 col-md-3 text-center">
+                        <h2>Gestión|Productos</h2>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="barra">
+        <nav class="navbar navbar-expand-lg text-center" ">
+            <div class=" container-fluid">
+            <img src="./img/logo.png" class="imgMTV">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <div class="dropdown MBI">
+                            <button class="btn  btn-outline-primary dropdown-toggle sep Mboton bgestion" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gestión
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="../ModuloGestionSucursal/GSucursales.html">Sucursales</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../ModuloGestionProductos/Gproductos.html">Productos</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown MBI">
+                            <button class="btn  btn-outline-primary dropdown-toggle sep Mboton bgestion" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Control Sucursales
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../ModuloGestionPedidos/Estatus_Pedidos.html">Estatus
+                                        Pedidos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../ModuloGestionPedidos/Mostrar_Reportes.html">Mostrar reportes</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ADMINISTRADOR
+                                </button>
+                                <ul class="dropdown-menu">
+                                  
+                                    <li><a class="dropdown-item" href="../../index.html">CERRAR SESION</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="title">Agregar un nuevo producto </div>
+        <form>
+            <fieldset>
+                <div class="detalles-form">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtnomProd" name="txtnomProd"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtnomProd">Nombre del producto</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtnomGen" name="txtnomGen"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtnomGen">Nombre genérico</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtprecio" name="txtprecio"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtprecio">Precio</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtunidadMedida" name="txtunidadMedida"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtunidadMedida">Unidad Medida</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtpresentacion" name="txtpresentacion"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtpresentacion">Presentación</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtindicacion" name="txtindicacion"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtindicacion">Principal Indicación</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtcontraindicaciones" name="txtcontraindicaciones"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtcontraindicaciones">Contraindicaciones</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtconcentracion" name="txtconcentracion"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtconcentracion">Concentración</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtunidadesEnvase" name="txtunidadesEnvase"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtunidadesEnvase">Unidades Envase</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="file" class="form-control form-control-sm btn btn-outline-secondary" id="txtfoto"
+                            name="txtfoto" accept=".jpg, .jpeg, .png" required onchange="despliegaFoto(this.value);">
+                        <label class="form-label">Foto</label>
+                    </div>
+
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtcodigoBarras" name="txtcodigoBarras"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtcodigoBarras">Código Barras</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtestatus" name="txtestatus"
+                            aria-describedby="emailHelp" required>
+                        <label class="form-label" for="txtestatus">Estatus</label>
+                    </div>
+
+            </fieldset>
+
+            <div class="botones">
+                <div class="btn">
+                    <button type="button" class=" btn1 draw-border1" id="btnAgregar"
+                        onclick="agregarProducto();">Agregar</button>
+                    <button type="button" class=" btn2 draw-border2" id="btnLimpiar"
+                        onclick="limpiar();">Limpiar</button>
+                    <button type="button" class=" btn3 draw-border3" id="btnModificar"
+                        onclick="modificaProducto();">Modificar</button>
+                    <button type="button" class=" btn4 draw-border4" id="btnEliminar"
+                        onclick="eliminarProducto();">Eliminar</button>
+                    <button type="button" class=" btn5 draw-border5" id="btnReactivar"
+                        onclick="reactivarProducto();">Reactivar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="buscador">
+        <div class="row mt-3 mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Buscar producto...">
+                    <button class="btn btn-primary" onclick="buscarProducto()">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="table-responsive">
+            <h1 style="text-align: center;">Lista de productos</h1>
+            <table class="table table-success align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre/Producto</th>
+                        <th scope="col">Nombre genérico</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Unidad/Medida</th>
+                        <th scope="col">Presentación</th>
+                        <th scope="col">Principal indicación</th>
+                        <th scope="col">Contraindicaciones</th>
+                        <th scope="col">Concentración</th>
+                        <th scope="col">Unidad/Envase</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Código/Barras</th>
+                        <th scope="col">Estatus</th>
+                    </tr>
+                </thead>
+                <tbody id="tblProductos"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/script_producto.js"></script>
+
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2023 Tetrabytes. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+</html>
